@@ -1,0 +1,1113 @@
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$workload)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.1047 -0.3750 -0.1575  0.1576  4.8275 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        0.187501   0.048689   3.851  0.00013 ***
+combined$workload -0.002503   0.006305  -0.397  0.69157    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6997 on 591 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.0002665,	Adjusted R-squared:  -0.001425 
+F-statistic: 0.1575 on 1 and 591 DF,  p-value: 0.6916
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$workload + combined$elective + 
+    combined$expos + combined$gened + combined$lang + combined$premed + 
+    combined$elective * combined$workload + combined$expos * 
+    combined$workload + combined$gened * combined$workload + 
+    combined$lang * combined$workload + combined$premed * combined$workload)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0724 -0.3797 -0.1439  0.1864  4.7651 
+
+Coefficients: (1 not defined because of singularities)
+                                     Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                          0.167378   0.082864   2.020   0.0439 *
+combined$workload                   -0.004998   0.010839  -0.461   0.6449  
+combined$elective                    0.066319   0.105240   0.630   0.5288  
+combined$expos                       0.112781   0.701521   0.161   0.8723  
+combined$gened                       0.031818   1.219168   0.026   0.9792  
+combined$lang                        0.118326   0.266674   0.444   0.6574  
+combined$premed                      0.530793   1.034488   0.513   0.6081  
+combined$workload:combined$elective  0.006248   0.013471   0.464   0.6430  
+combined$workload:combined$expos           NA         NA      NA       NA  
+combined$workload:combined$gened    -0.035312   0.362756  -0.097   0.9225  
+combined$workload:combined$lang     -0.031504   0.050822  -0.620   0.5356  
+combined$workload:combined$premed   -0.124442   0.132811  -0.937   0.3492  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6999 on 582 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.01486,	Adjusted R-squared:  -0.00207 
+F-statistic: 0.8777 on 10 and 582 DF,  p-value: 0.5539
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$workload + combined$afam + 
+    combined$anthro + combined$ac + combined$am + combined$ap + 
+    combined$astro + combined$biopub + combined$bioeng + combined$biophy + 
+    combined$biostat + combined$celtic + combined$chemphysbio + 
+    combined$chembio + combined$chemchembio + combined$classics + 
+    combined$complit + combined$cs + combined$earth + combined$eastasian + 
+    combined$ec + combined$engsci + combined$eng + combined$epp + 
+    combined$ese + combined$emr + combined$fm + combined$fresh + 
+    combined$german + combined$ghhp + combined$gov + combined$hp + 
+    combined$hist + combined$histlit + combined$haa + combined$heb + 
+    combined$humanities + combined$ling + combined$math + combined$medic + 
+    combined$medieval + combined$me + combined$mbb + combined$mcb + 
+    combined$music + combined$neareast + combined$neuro + combined$oeb + 
+    combined$phil + combined$phys + combined$pop + combined$psych + 
+    combined$religion + combined$rll + combined$russia + combined$slavic + 
+    combined$soc + combined$southasia + combined$southasia + 
+    combined$stat + combined$scrb + combined$sysbio + combined$tdm + 
+    combined$ves + combined$wgs + combined$workload * combined$afam + 
+    combined$workload * combined$anthro + combined$workload * 
+    combined$ac + combined$workload * combined$am + combined$workload * 
+    combined$ap + combined$workload * combined$astro + combined$workload * 
+    combined$biopub + combined$workload * combined$bioeng + combined$workload * 
+    combined$biophy + combined$workload * combined$biostat + 
+    combined$workload * combined$celtic + combined$workload * 
+    combined$chemphysbio + combined$workload * combined$chembio + 
+    combined$workload * combined$chemchembio + combined$workload * 
+    combined$classics + combined$workload * combined$complit + 
+    combined$workload * combined$cs + combined$workload * combined$earth + 
+    combined$workload * combined$eastasian + combined$workload * 
+    combined$ec + combined$workload * combined$engsci + combined$workload * 
+    combined$eng + combined$workload * combined$epp + combined$workload * 
+    combined$ese + combined$workload * combined$emr + combined$workload * 
+    combined$fm + combined$workload * combined$fresh + combined$workload * 
+    combined$german + combined$workload * combined$ghhp + combined$workload * 
+    combined$gov + combined$workload * combined$hp + combined$workload * 
+    combined$hist + combined$workload * combined$histlit + combined$workload * 
+    combined$haa + combined$workload * combined$heb + combined$workload * 
+    combined$humanities + combined$workload * combined$ling + 
+    combined$workload * combined$math + combined$workload * combined$medic + 
+    combined$workload * combined$medieval + combined$workload * 
+    combined$me + combined$workload * combined$mbb + combined$workload * 
+    combined$mcb + combined$workload * combined$music + combined$workload * 
+    combined$neareast + combined$workload * combined$neuro + 
+    combined$workload * combined$oeb + combined$workload * combined$phil + 
+    combined$workload * combined$phys + combined$workload * combined$pop + 
+    combined$workload * combined$psych + combined$workload * 
+    combined$religion + combined$workload * combined$rll + combined$workload * 
+    combined$russia + combined$workload * combined$slavic + combined$workload * 
+    combined$soc + combined$workload * combined$southasia + combined$workload * 
+    combined$southasia + combined$workload * combined$stat + 
+    combined$workload * combined$scrb + combined$workload * combined$sysbio + 
+    combined$workload * combined$tdm + combined$workload * combined$ves + 
+    combined$workload * combined$wgs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.6229 -0.3595 -0.0700  0.1900  4.0374 
+
+Coefficients: (21 not defined because of singularities)
+                                         Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                             0.0299909  0.2016810   0.149   0.8818  
+combined$workload                       0.0009708  0.0380069   0.026   0.9796  
+combined$afam                           1.3447706  0.6156708   2.184   0.0294 *
+combined$anthro                         1.7153609  0.7897332   2.172   0.0303 *
+combined$ac                            -6.6756336  7.8100302  -0.855   0.3931  
+combined$am                             1.1963564  0.7046395   1.698   0.0902 .
+combined$ap                             0.1564877  1.0202479   0.153   0.8782  
+combined$astro                          0.8156244  0.6606463   1.235   0.2176  
+combined$biopub                        -0.3173556  0.7317788  -0.434   0.6647  
+combined$bioeng                        -0.1966897  0.7297001  -0.270   0.7876  
+combined$biophy                         0.8051155  1.3338118   0.604   0.5464  
+combined$biostat                        0.7480896  0.5470332   1.368   0.1721  
+combined$celtic                                NA         NA      NA       NA  
+combined$chemphysbio                   -0.4673366  0.9652730  -0.484   0.6285  
+combined$chembio                       -0.1192464  0.7265294  -0.164   0.8697  
+combined$chemchembio                    0.4413469  0.6237538   0.708   0.4796  
+combined$classics                      -0.1238963  0.5366179  -0.231   0.8175  
+combined$complit                       -0.3189519  1.2629278  -0.253   0.8007  
+combined$cs                            -0.0397595  0.4398464  -0.090   0.9280  
+combined$earth                         -0.1313551  0.3554684  -0.370   0.7119  
+combined$eastasian                     -0.2549589  0.6603005  -0.386   0.6996  
+combined$ec                             0.1104302  0.3348941   0.330   0.7417  
+combined$engsci                        -0.0246874  0.4692846  -0.053   0.9581  
+combined$eng                            0.0659032  0.5162111   0.128   0.8985  
+combined$epp                            2.9587244  4.3382717   0.682   0.4956  
+combined$ese                            2.2429828  3.4422441   0.652   0.5150  
+combined$emr                                   NA         NA      NA       NA  
+combined$fm                             0.0424663  0.7239966   0.059   0.9533  
+combined$fresh                         -0.4716235  0.5348423  -0.882   0.3783  
+combined$german                         0.4879804  1.0481595   0.466   0.6417  
+combined$ghhp                           1.4913134  2.5823751   0.577   0.5639  
+combined$gov                            0.3440966  0.3658640   0.941   0.3474  
+combined$hp                            -0.1187610  0.7251883  -0.164   0.8700  
+combined$hist                           0.1370358  0.6574434   0.208   0.8350  
+combined$histlit                        0.2817714  2.4324438   0.116   0.9078  
+combined$haa                            0.5157100  0.8409947   0.613   0.5400  
+combined$heb                            0.9630730  0.7912531   1.217   0.2241  
+combined$humanities                    -0.0372722  0.7328974  -0.051   0.9595  
+combined$ling                           0.4318094  0.5203727   0.830   0.4071  
+combined$math                           0.2088082  0.5063646   0.412   0.6803  
+combined$medic                          0.3469746  0.3085163   1.125   0.2613  
+combined$medieval                       0.0880190  0.7312116   0.120   0.9042  
+combined$me                            -0.0401848  0.7590267  -0.053   0.9578  
+combined$mbb                                   NA         NA      NA       NA  
+combined$mcb                           -0.1072343  0.3604110  -0.298   0.7662  
+combined$music                          0.1529602  0.3931507   0.389   0.6974  
+combined$neareast                       0.7012915  0.7908391   0.887   0.3756  
+combined$neuro                          0.3667797  0.4499440   0.815   0.4154  
+combined$oeb                                   NA         NA      NA       NA  
+combined$phil                          -0.2617284  1.6549737  -0.158   0.8744  
+combined$phys                           0.1675698  0.5028059   0.333   0.7391  
+combined$pop                            0.0604948  0.7514651   0.081   0.9359  
+combined$psych                          0.1211118  0.4760504   0.254   0.7993  
+combined$religion                       0.1067478  0.5119395   0.209   0.8349  
+combined$rll                           -0.9078425  0.7481707  -1.213   0.2256  
+combined$russia                         1.3918841  2.2813053   0.610   0.5421  
+combined$slavic                         0.0704149  0.4581172   0.154   0.8779  
+combined$soc                            1.0740369  1.6981426   0.632   0.5274  
+combined$southasia                     -0.1056082  0.3950472  -0.267   0.7893  
+combined$stat                           0.1451945  0.4293848   0.338   0.7354  
+combined$scrb                           0.6133685  1.0822221   0.567   0.5711  
+combined$sysbio                         0.1902896  0.7302065   0.261   0.7945  
+combined$tdm                                   NA         NA      NA       NA  
+combined$ves                           -0.1675849  0.5334931  -0.314   0.7536  
+combined$wgs                           -1.3788831  0.8603494  -1.603   0.1097  
+combined$workload:combined$afam        -0.2134800  0.2089585  -1.022   0.3075  
+combined$workload:combined$anthro      -0.1845594  0.1029969  -1.792   0.0738 .
+combined$workload:combined$ac           0.6046936  0.7100372   0.852   0.3948  
+combined$workload:combined$am          -0.0946088  0.0835650  -1.132   0.2581  
+combined$workload:combined$ap          -0.0086915  0.1238138  -0.070   0.9441  
+combined$workload:combined$astro       -0.0834767  0.0829890  -1.006   0.3150  
+combined$workload:combined$biopub              NA         NA      NA       NA  
+combined$workload:combined$bioeng              NA         NA      NA       NA  
+combined$workload:combined$biophy      -0.0116091  0.2187907  -0.053   0.9577  
+combined$workload:combined$biostat     -0.0579429  0.0692088  -0.837   0.4029  
+combined$workload:combined$celtic              NA         NA      NA       NA  
+combined$workload:combined$chemphysbio         NA         NA      NA       NA  
+combined$workload:combined$chembio             NA         NA      NA       NA  
+combined$workload:combined$chemchembio -0.0395965  0.0749579  -0.528   0.5976  
+combined$workload:combined$classics    -0.0047221  0.0781348  -0.060   0.9518  
+combined$workload:combined$complit      0.0720811  0.3187373   0.226   0.8212  
+combined$workload:combined$cs           0.0032733  0.0513641   0.064   0.9492  
+combined$workload:combined$earth        0.0097598  0.0466262   0.209   0.8343  
+combined$workload:combined$eastasian    0.0555222  0.1089242   0.510   0.6105  
+combined$workload:combined$ec          -0.0006340  0.0481420  -0.013   0.9895  
+combined$workload:combined$engsci       0.0098899  0.0689694   0.143   0.8860  
+combined$workload:combined$eng         -0.0188472  0.0862911  -0.218   0.8272  
+combined$workload:combined$epp         -0.9601722  1.2664230  -0.758   0.4487  
+combined$workload:combined$ese         -0.4727619  0.6520852  -0.725   0.4688  
+combined$workload:combined$emr                 NA         NA      NA       NA  
+combined$workload:combined$fm                  NA         NA      NA       NA  
+combined$workload:combined$fresh        0.1553856  0.1930262   0.805   0.4212  
+combined$workload:combined$german      -0.2132016  0.3486914  -0.611   0.5412  
+combined$workload:combined$ghhp        -0.3688187  0.6756916  -0.546   0.5854  
+combined$workload:combined$gov         -0.0250967  0.0570577  -0.440   0.6602  
+combined$workload:combined$hp                  NA         NA      NA       NA  
+combined$workload:combined$hist         0.0273560  0.0784726   0.349   0.7275  
+combined$workload:combined$histlit     -0.0620209  0.5321486  -0.117   0.9073  
+combined$workload:combined$haa         -0.0551622  0.1240520  -0.445   0.6568  
+combined$workload:combined$heb         -0.2341087  0.1644562  -1.424   0.1552  
+combined$workload:combined$humanities          NA         NA      NA       NA  
+combined$workload:combined$ling        -0.0391143  0.0856448  -0.457   0.6481  
+combined$workload:combined$math         0.0145112  0.0694864   0.209   0.8347  
+combined$workload:combined$medic       -0.0338773  0.0548494  -0.618   0.5371  
+combined$workload:combined$medieval            NA         NA      NA       NA  
+combined$workload:combined$me                  NA         NA      NA       NA  
+combined$workload:combined$mbb                 NA         NA      NA       NA  
+combined$workload:combined$mcb          0.0204469  0.0539041   0.379   0.7046  
+combined$workload:combined$music       -0.0038940  0.0668741  -0.058   0.9536  
+combined$workload:combined$neareast    -0.0891049  0.1434584  -0.621   0.5348  
+combined$workload:combined$neuro       -0.0269973  0.0581662  -0.464   0.6428  
+combined$workload:combined$oeb                 NA         NA      NA       NA  
+combined$workload:combined$phil         0.2247407  0.4058875   0.554   0.5800  
+combined$workload:combined$phys        -0.0032299  0.0636824  -0.051   0.9596  
+combined$workload:combined$pop                 NA         NA      NA       NA  
+combined$workload:combined$psych        0.0354880  0.1031473   0.344   0.7310  
+combined$workload:combined$religion     0.0041411  0.0402254   0.103   0.9180  
+combined$workload:combined$rll          0.3057712  0.1491871   2.050   0.0409 *
+combined$workload:combined$russia      -0.4349986  0.6340664  -0.686   0.4930  
+combined$workload:combined$slavic      -0.0018402  0.0724770  -0.025   0.9798  
+combined$workload:combined$soc         -0.2188661  0.2955544  -0.741   0.4593  
+combined$workload:combined$southasia    0.0072797  0.0773177   0.094   0.9250  
+combined$workload:combined$stat         0.0120821  0.0542296   0.223   0.8238  
+combined$workload:combined$scrb        -0.0914511  0.2255697  -0.405   0.6853  
+combined$workload:combined$sysbio              NA         NA      NA       NA  
+combined$workload:combined$tdm                 NA         NA      NA       NA  
+combined$workload:combined$ves          0.0296832  0.0756548   0.392   0.6950  
+combined$workload:combined$wgs          0.2711983  0.1280249   2.118   0.0347 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7161 on 486 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.1389,	Adjusted R-squared:  -0.04889 
+F-statistic: 0.7397 on 106 and 486 DF,  p-value: 0.9707
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$rating)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0517 -0.3752 -0.1351  0.1848  4.6983 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     -0.66568    0.20376  -3.267  0.00115 ** 
+combined$rating  0.19348    0.04682   4.132 4.11e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6875 on 597 degrees of freedom
+  (24 observations deleted due to missingness)
+Multiple R-squared:  0.02781,	Adjusted R-squared:  0.02618 
+F-statistic: 17.07 on 1 and 597 DF,  p-value: 4.107e-05
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$rating + combined$elective + 
+    combined$expos + combined$gened + combined$lang + combined$premed + 
+    combined$elective * combined$rating + combined$expos * combined$rating + 
+    combined$gened * combined$rating + combined$lang * combined$rating + 
+    combined$premed * combined$rating)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0681 -0.3844 -0.1348  0.1748  4.6874 
+
+Coefficients: (1 not defined because of singularities)
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                       -0.69338    0.26101  -2.657  0.00811 **
+combined$rating                    0.19752    0.06154   3.210  0.00140 **
+combined$elective                  0.22772    0.47028   0.484  0.62841   
+combined$expos                     0.06990    0.69207   0.101  0.91958   
+combined$gened                    -1.31305    1.79634  -0.731  0.46510   
+combined$lang                      1.13962    1.35883   0.839  0.40199   
+combined$premed                    0.33129    1.75623   0.189  0.85044   
+combined$rating:combined$elective -0.04187    0.10661  -0.393  0.69464   
+combined$rating:combined$expos          NA         NA      NA       NA   
+combined$rating:combined$gened     0.33477    0.45671   0.733  0.46385   
+combined$rating:combined$lang     -0.26652    0.29876  -0.892  0.37271   
+combined$rating:combined$premed   -0.17567    0.46569  -0.377  0.70614   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6901 on 588 degrees of freedom
+  (24 observations deleted due to missingness)
+Multiple R-squared:  0.03527,	Adjusted R-squared:  0.01887 
+F-statistic:  2.15 on 10 and 588 DF,  p-value: 0.01936
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$rating + combined$afam + 
+    combined$anthro + combined$ac + combined$am + combined$ap + 
+    combined$astro + combined$biopub + combined$bioeng + combined$biophy + 
+    combined$biostat + combined$celtic + combined$chemphysbio + 
+    combined$chembio + combined$chemchembio + combined$classics + 
+    combined$complit + combined$cs + combined$earth + combined$eastasian + 
+    combined$ec + combined$engsci + combined$eng + combined$epp + 
+    combined$ese + combined$emr + combined$fm + combined$fresh + 
+    combined$german + combined$ghhp + combined$gov + combined$hp + 
+    combined$hist + combined$histlit + combined$haa + combined$heb + 
+    combined$humanities + combined$ling + combined$math + combined$medic + 
+    combined$medieval + combined$me + combined$mbb + combined$mcb + 
+    combined$music + combined$neareast + combined$neuro + combined$oeb + 
+    combined$phil + combined$phys + combined$pop + combined$psych + 
+    combined$religion + combined$rll + combined$russia + combined$slavic + 
+    combined$soc + combined$southasia + combined$southasia + 
+    combined$stat + combined$scrb + combined$sysbio + combined$tdm + 
+    combined$ves + combined$wgs + combined$rating * combined$afam + 
+    combined$rating * combined$anthro + combined$rating * combined$ac + 
+    combined$rating * combined$am + combined$rating * combined$ap + 
+    combined$rating * combined$astro + combined$rating * combined$biopub + 
+    combined$rating * combined$bioeng + combined$rating * combined$biophy + 
+    combined$rating * combined$biostat + combined$rating * combined$celtic + 
+    combined$rating * combined$chemphysbio + combined$rating * 
+    combined$chembio + combined$rating * combined$chemchembio + 
+    combined$rating * combined$classics + combined$rating * combined$complit + 
+    combined$rating * combined$cs + combined$rating * combined$earth + 
+    combined$rating * combined$eastasian + combined$rating * 
+    combined$ec + combined$rating * combined$engsci + combined$rating * 
+    combined$eng + combined$rating * combined$epp + combined$rating * 
+    combined$ese + combined$rating * combined$emr + combined$rating * 
+    combined$fm + combined$rating * combined$fresh + combined$rating * 
+    combined$german + combined$rating * combined$ghhp + combined$rating * 
+    combined$gov + combined$rating * combined$hp + combined$rating * 
+    combined$hist + combined$rating * combined$histlit + combined$rating * 
+    combined$haa + combined$rating * combined$heb + combined$rating * 
+    combined$humanities + combined$rating * combined$ling + combined$rating * 
+    combined$math + combined$rating * combined$medic + combined$rating * 
+    combined$medieval + combined$rating * combined$me + combined$rating * 
+    combined$mbb + combined$rating * combined$mcb + combined$rating * 
+    combined$music + combined$rating * combined$neareast + combined$rating * 
+    combined$neuro + combined$rating * combined$oeb + combined$rating * 
+    combined$phil + combined$rating * combined$phys + combined$rating * 
+    combined$pop + combined$rating * combined$psych + combined$rating * 
+    combined$religion + combined$rating * combined$rll + combined$rating * 
+    combined$russia + combined$rating * combined$slavic + combined$rating * 
+    combined$soc + combined$rating * combined$southasia + combined$rating * 
+    combined$southasia + combined$rating * combined$stat + combined$rating * 
+    combined$scrb + combined$rating * combined$sysbio + combined$rating * 
+    combined$tdm + combined$rating * combined$ves + combined$rating * 
+    combined$wgs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.8200 -0.3384 -0.0720  0.2009  3.9522 
+
+Coefficients: (22 not defined because of singularities)
+                                      Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                          -0.999825   0.847331  -1.180  0.23858   
+combined$rating                       0.249268   0.202745   1.229  0.21948   
+combined$afam                        -6.039055   2.070342  -2.917  0.00370 **
+combined$anthro                      -1.475731   2.196389  -0.672  0.50197   
+combined$ac                          -4.524249   6.213755  -0.728  0.46690   
+combined$am                          -0.919240   1.620854  -0.567  0.57088   
+combined$ap                           0.432256   3.975252   0.109  0.91346   
+combined$astro                       -2.122427   2.381442  -0.891  0.37324   
+combined$biopub                      -0.532231   0.713076  -0.746  0.45579   
+combined$bioeng                      -0.182175   0.691953  -0.263  0.79245   
+combined$biophy                       1.964825   3.804792   0.516  0.60580   
+combined$biostat                      0.742476   1.148573   0.646  0.51830   
+combined$celtic                             NA         NA      NA       NA   
+combined$chemphysbio                 -0.588403   0.700846  -0.840  0.40156   
+combined$chembio                     -0.180289   0.693752  -0.260  0.79507   
+combined$chemchembio                  0.308486   1.682343   0.183  0.85459   
+combined$classics                     0.869036   2.389524   0.364  0.71625   
+combined$complit                     -4.519656  22.763626  -0.199  0.84270   
+combined$cs                           0.097993   1.665182   0.059  0.95310   
+combined$earth                       -2.873035   3.055015  -0.940  0.34746   
+combined$eastasian                    0.433247   1.553989   0.279  0.78052   
+combined$ec                          -0.300183   1.170366  -0.256  0.79768   
+combined$engsci                       0.147543   1.235101   0.119  0.90496   
+combined$eng                         -2.316333   4.208655  -0.550  0.58231   
+combined$epp                         -2.725870   4.462961  -0.611  0.54163   
+combined$ese                         -0.226105   0.357181  -0.633  0.52701   
+combined$emr                                NA         NA      NA       NA   
+combined$fm                          -0.044960   0.695534  -0.065  0.94849   
+combined$fresh                       -0.274540   1.428832  -0.192  0.84771   
+combined$german                      -9.090374   6.382486  -1.424  0.15500   
+combined$ghhp                        -3.026610   6.979235  -0.434  0.66473   
+combined$gov                         -0.631709   1.334650  -0.473  0.63620   
+combined$hp                          -0.155362   0.692560  -0.224  0.82259   
+combined$hist                        -2.287763   3.834258  -0.597  0.55101   
+combined$histlit                     -1.277953  34.934070  -0.037  0.97083   
+combined$haa                          2.509135   2.531577   0.991  0.32211   
+combined$heb                         -4.029009   2.694108  -1.495  0.13543   
+combined$humanities                   0.027678   0.693719   0.040  0.96819   
+combined$ling                         4.933183   2.849310   1.731  0.08401 . 
+combined$math                         0.553580   1.741731   0.318  0.75075   
+combined$medic                        0.205162   1.210197   0.170  0.86545   
+combined$medieval                    -0.071663   0.704363  -0.102  0.91900   
+combined$me                          -0.246517   0.713076  -0.346  0.72971   
+combined$mbb                                NA         NA      NA       NA   
+combined$mcb                          0.365332   1.200707   0.304  0.76105   
+combined$music                        0.145817   1.335453   0.109  0.91310   
+combined$neareast                     5.081806   2.064380   2.462  0.01417 * 
+combined$neuro                       -2.948469  14.974833  -0.197  0.84399   
+combined$oeb                                NA         NA      NA       NA   
+combined$phil                        -0.019565   3.513198  -0.006  0.99556   
+combined$phys                         1.505224   1.380558   1.090  0.27611   
+combined$pop                          0.277239   0.712967   0.389  0.69755   
+combined$psych                        2.649904   1.635119   1.621  0.10574   
+combined$religion                     4.758955   4.140721   1.149  0.25099   
+combined$rll                         -4.621328   2.752791  -1.679  0.09383 . 
+combined$russia                      -6.562675  10.449236  -0.628  0.53026   
+combined$slavic                       0.686459   1.760107   0.390  0.69670   
+combined$soc                         -1.103855   1.787683  -0.617  0.53720   
+combined$southasia                    0.167572   2.071832   0.081  0.93557   
+combined$stat                         0.436986   1.400471   0.312  0.75515   
+combined$scrb                        -1.851985   5.791361  -0.320  0.74927   
+combined$sysbio                       0.100340   0.695534   0.144  0.88535   
+combined$tdm                                NA         NA      NA       NA   
+combined$ves                          0.332931   1.522047   0.219  0.82694   
+combined$wgs                         -3.883137   2.644244  -1.469  0.14260   
+combined$rating:combined$afam         1.476035   0.461382   3.199  0.00147 **
+combined$rating:combined$anthro       0.428798   0.521473   0.822  0.41131   
+combined$rating:combined$ac           1.009991   1.411499   0.716  0.47461   
+combined$rating:combined$am           0.326229   0.394288   0.827  0.40842   
+combined$rating:combined$ap          -0.093318   0.897011  -0.104  0.91719   
+combined$rating:combined$astro        0.525906   0.557688   0.943  0.34614   
+combined$rating:combined$biopub             NA         NA      NA       NA   
+combined$rating:combined$bioeng             NA         NA      NA       NA   
+combined$rating:combined$biophy      -0.299268   0.988784  -0.303  0.76227   
+combined$rating:combined$biostat     -0.067151   0.297519  -0.226  0.82153   
+combined$rating:combined$celtic             NA         NA      NA       NA   
+combined$rating:combined$chemphysbio        NA         NA      NA       NA   
+combined$rating:combined$chembio            NA         NA      NA       NA   
+combined$rating:combined$chemchembio -0.030154   0.425809  -0.071  0.94357   
+combined$rating:combined$classics    -0.246667   0.522157  -0.472  0.63685   
+combined$rating:combined$complit      0.919563   4.843119   0.190  0.84949   
+combined$rating:combined$cs          -0.016184   0.408743  -0.040  0.96843   
+combined$rating:combined$earth        0.563597   0.650572   0.866  0.38674   
+combined$rating:combined$eastasian   -0.103586   0.343492  -0.302  0.76311   
+combined$rating:combined$ec           0.098332   0.279365   0.352  0.72500   
+combined$rating:combined$engsci      -0.017540   0.299484  -0.059  0.95332   
+combined$rating:combined$eng          0.444798   0.886633   0.502  0.61612   
+combined$rating:combined$epp          0.518093   0.988784   0.524  0.60054   
+combined$rating:combined$ese                NA         NA      NA       NA   
+combined$rating:combined$emr                NA         NA      NA       NA   
+combined$rating:combined$fm                 NA         NA      NA       NA   
+combined$rating:combined$fresh        0.035969   0.335817   0.107  0.91475   
+combined$rating:combined$german       1.844807   1.337337   1.379  0.16838   
+combined$rating:combined$ghhp         0.703902   1.596816   0.441  0.65954   
+combined$rating:combined$gov          0.180840   0.315060   0.574  0.56624   
+combined$rating:combined$hp                 NA         NA      NA       NA   
+combined$rating:combined$hist         0.613404   0.899333   0.682  0.49552   
+combined$rating:combined$histlit      0.306287   8.383626   0.037  0.97087   
+combined$rating:combined$haa         -0.579639   0.630902  -0.919  0.35868   
+combined$rating:combined$heb          0.864426   0.605469   1.428  0.15401   
+combined$rating:combined$humanities         NA         NA      NA       NA   
+combined$rating:combined$ling        -1.095643   0.655539  -1.671  0.09528 . 
+combined$rating:combined$math        -0.060813   0.409705  -0.148  0.88206   
+combined$rating:combined$medic       -0.005094   0.288938  -0.018  0.98594   
+combined$rating:combined$medieval           NA         NA      NA       NA   
+combined$rating:combined$me                 NA         NA      NA       NA   
+combined$rating:combined$mbb                NA         NA      NA       NA   
+combined$rating:combined$mcb         -0.079479   0.287378  -0.277  0.78223   
+combined$rating:combined$music       -0.021205   0.309899  -0.068  0.94547   
+combined$rating:combined$neareast    -1.093526   0.460723  -2.374  0.01800 * 
+combined$rating:combined$neuro        0.616738   3.111663   0.198  0.84297   
+combined$rating:combined$oeb                NA         NA      NA       NA   
+combined$rating:combined$phil         0.137869   0.804151   0.171  0.86394   
+combined$rating:combined$phys        -0.329093   0.332397  -0.990  0.32263   
+combined$rating:combined$pop                NA         NA      NA       NA   
+combined$rating:combined$psych       -0.559850   0.371219  -1.508  0.13216   
+combined$rating:combined$religion    -0.998770   0.887350  -1.126  0.26090   
+combined$rating:combined$rll          1.084529   0.595379   1.822  0.06913 . 
+combined$rating:combined$russia       1.486843   2.427917   0.612  0.54056   
+combined$rating:combined$slavic      -0.160017   0.391206  -0.409  0.68269   
+combined$rating:combined$soc          0.196835   0.406648   0.484  0.62857   
+combined$rating:combined$southasia   -0.082584   0.444881  -0.186  0.85281   
+combined$rating:combined$stat        -0.033098   0.345426  -0.096  0.92370   
+combined$rating:combined$scrb         0.457745   1.327695   0.345  0.73042   
+combined$rating:combined$sysbio             NA         NA      NA       NA   
+combined$rating:combined$tdm                NA         NA      NA       NA   
+combined$rating:combined$ves         -0.079916   0.351417  -0.227  0.82020   
+combined$rating:combined$wgs          0.978343   0.615218   1.590  0.11242   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6843 on 493 degrees of freedom
+  (24 observations deleted due to missingness)
+Multiple R-squared:  0.2046,	Adjusted R-squared:  0.03525 
+F-statistic: 1.208 on 105 and 493 DF,  p-value: 0.09673
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$rating + combined$workload)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0666 -0.3780 -0.1367  0.1820  4.6913 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.661659   0.210264  -3.147  0.00173 ** 
+combined$rating    0.197242   0.047548   4.148 3.84e-05 ***
+combined$workload -0.002649   0.006220  -0.426  0.67042    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6903 on 590 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.0286,	Adjusted R-squared:  0.02531 
+F-statistic: 8.685 on 2 and 590 DF,  p-value: 0.0001917
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$rating + combined$workload + 
+    combined$elective + combined$expos + combined$gened + combined$lang + 
+    combined$premed + combined$elective * combined$rating + combined$expos * 
+    combined$rating + combined$gened * combined$rating + combined$lang * 
+    combined$rating + combined$premed * combined$rating + combined$elective * 
+    combined$workload + combined$expos * combined$workload + 
+    combined$gened * combined$workload + combined$lang * combined$workload + 
+    combined$premed * combined$workload)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0773 -0.3822 -0.1296  0.1739  4.6796 
+
+Coefficients: (2 not defined because of singularities)
+                                     Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                         -0.657998   0.270507  -2.432  0.01530 * 
+combined$rating                      0.198242   0.061891   3.203  0.00143 **
+combined$workload                   -0.005864   0.010748  -0.546  0.58555   
+combined$elective                    0.186236   0.491492   0.379  0.70489   
+combined$expos                       0.060213   0.696046   0.087  0.93109   
+combined$gened                      -1.106916   1.839488  -0.602  0.54758   
+combined$lang                        1.345012   1.403538   0.958  0.33831   
+combined$premed                      1.744400   2.281062   0.765  0.44474   
+combined$rating:combined$elective   -0.039987   0.110129  -0.363  0.71667   
+combined$rating:combined$expos             NA         NA      NA       NA   
+combined$rating:combined$gened       0.543044   0.531987   1.021  0.30778   
+combined$rating:combined$lang       -0.285637   0.301316  -0.948  0.34354   
+combined$rating:combined$premed     -0.289990   0.481654  -0.602  0.54736   
+combined$workload:combined$elective  0.006704   0.013359   0.502  0.61597   
+combined$workload:combined$expos           NA         NA      NA       NA   
+combined$workload:combined$gened    -0.312975   0.417445  -0.750  0.45372   
+combined$workload:combined$lang     -0.031834   0.050538  -0.630  0.52901   
+combined$workload:combined$premed   -0.129720   0.135479  -0.957  0.33872   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6938 on 577 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.04036,	Adjusted R-squared:  0.01541 
+F-statistic: 1.618 on 15 and 577 DF,  p-value: 0.06445
+
+
+Call:
+lm(formula = combined$enroll_chg_pct ~ combined$rating + combined$workload + 
+    combined$afam + combined$anthro + combined$ac + combined$am + 
+    combined$ap + combined$astro + combined$biopub + combined$bioeng + 
+    combined$biophy + combined$biostat + combined$celtic + combined$chemphysbio + 
+    combined$chembio + combined$chemchembio + combined$classics + 
+    combined$complit + combined$cs + combined$earth + combined$eastasian + 
+    combined$ec + combined$engsci + combined$eng + combined$epp + 
+    combined$ese + combined$emr + combined$fm + combined$fresh + 
+    combined$german + combined$ghhp + combined$gov + combined$hp + 
+    combined$hist + combined$histlit + combined$haa + combined$heb + 
+    combined$humanities + combined$ling + combined$math + combined$medic + 
+    combined$medieval + combined$me + combined$mbb + combined$mcb + 
+    combined$music + combined$neareast + combined$neuro + combined$oeb + 
+    combined$phil + combined$phys + combined$pop + combined$psych + 
+    combined$religion + combined$rll + combined$russia + combined$slavic + 
+    combined$soc + combined$southasia + combined$southasia + 
+    combined$stat + combined$scrb + combined$sysbio + combined$tdm + 
+    combined$ves + combined$wgs + combined$rating * combined$afam + 
+    combined$rating * combined$anthro + combined$rating * combined$ac + 
+    combined$rating * combined$am + combined$rating * combined$ap + 
+    combined$rating * combined$astro + combined$rating * combined$biopub + 
+    combined$rating * combined$bioeng + combined$rating * combined$biophy + 
+    combined$rating * combined$biostat + combined$rating * combined$celtic + 
+    combined$rating * combined$chemphysbio + combined$rating * 
+    combined$chembio + combined$rating * combined$chemchembio + 
+    combined$rating * combined$classics + combined$rating * combined$complit + 
+    combined$rating * combined$cs + combined$rating * combined$earth + 
+    combined$rating * combined$eastasian + combined$rating * 
+    combined$ec + combined$rating * combined$engsci + combined$rating * 
+    combined$eng + combined$rating * combined$epp + combined$rating * 
+    combined$ese + combined$rating * combined$emr + combined$rating * 
+    combined$fm + combined$rating * combined$fresh + combined$rating * 
+    combined$german + combined$rating * combined$ghhp + combined$rating * 
+    combined$gov + combined$rating * combined$hp + combined$rating * 
+    combined$hist + combined$rating * combined$histlit + combined$rating * 
+    combined$haa + combined$rating * combined$heb + combined$rating * 
+    combined$humanities + combined$rating * combined$ling + combined$rating * 
+    combined$math + combined$rating * combined$medic + combined$rating * 
+    combined$medieval + combined$rating * combined$me + combined$rating * 
+    combined$mbb + combined$rating * combined$mcb + combined$rating * 
+    combined$music + combined$rating * combined$neareast + combined$rating * 
+    combined$neuro + combined$rating * combined$oeb + combined$rating * 
+    combined$phil + combined$rating * combined$phys + combined$rating * 
+    combined$pop + combined$rating * combined$psych + combined$rating * 
+    combined$religion + combined$rating * combined$rll + combined$rating * 
+    combined$russia + combined$rating * combined$slavic + combined$rating * 
+    combined$soc + combined$rating * combined$southasia + combined$rating * 
+    combined$southasia + combined$rating * combined$stat + combined$rating * 
+    combined$scrb + combined$rating * combined$sysbio + combined$rating * 
+    combined$tdm + combined$rating * combined$ves + combined$rating * 
+    combined$wgs + combined$workload * combined$afam + combined$workload * 
+    combined$anthro + combined$workload * combined$ac + combined$workload * 
+    combined$am + combined$workload * combined$ap + combined$workload * 
+    combined$astro + combined$workload * combined$biopub + combined$workload * 
+    combined$bioeng + combined$workload * combined$biophy + combined$workload * 
+    combined$biostat + combined$workload * combined$celtic + 
+    combined$workload * combined$chemphysbio + combined$workload * 
+    combined$chembio + combined$workload * combined$chemchembio + 
+    combined$workload * combined$classics + combined$workload * 
+    combined$complit + combined$workload * combined$cs + combined$workload * 
+    combined$earth + combined$workload * combined$eastasian + 
+    combined$workload * combined$ec + combined$workload * combined$engsci + 
+    combined$workload * combined$eng + combined$workload * combined$epp + 
+    combined$workload * combined$ese + combined$workload * combined$emr + 
+    combined$workload * combined$fm + combined$workload * combined$fresh + 
+    combined$workload * combined$german + combined$workload * 
+    combined$ghhp + combined$workload * combined$gov + combined$workload * 
+    combined$hp + combined$workload * combined$hist + combined$workload * 
+    combined$histlit + combined$workload * combined$haa + combined$workload * 
+    combined$heb + combined$workload * combined$humanities + 
+    combined$workload * combined$ling + combined$workload * combined$math + 
+    combined$workload * combined$medic + combined$workload * 
+    combined$medieval + combined$workload * combined$me + combined$workload * 
+    combined$mbb + combined$workload * combined$mcb + combined$workload * 
+    combined$music + combined$workload * combined$neareast + 
+    combined$workload * combined$neuro + combined$workload * 
+    combined$oeb + combined$workload * combined$phil + combined$workload * 
+    combined$phys + combined$workload * combined$pop + combined$workload * 
+    combined$psych + combined$workload * combined$religion + 
+    combined$workload * combined$rll + combined$workload * combined$russia + 
+    combined$workload * combined$slavic + combined$workload * 
+    combined$soc + combined$workload * combined$southasia + combined$workload * 
+    combined$southasia + combined$workload * combined$stat + 
+    combined$workload * combined$scrb + combined$workload * combined$sysbio + 
+    combined$workload * combined$tdm + combined$workload * combined$ves + 
+    combined$workload * combined$wgs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.8515 -0.3170 -0.0382  0.1804  3.6032 
+
+Coefficients: (42 not defined because of singularities)
+                                        Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                            -0.992825   0.871038  -1.140   0.2550   
+combined$rating                         0.250475   0.207786   1.205   0.2287   
+combined$workload                      -0.002667   0.037225  -0.072   0.9429   
+combined$afam                          -5.571825   2.247265  -2.479   0.0135 * 
+combined$anthro                         0.221090   2.432209   0.091   0.9276   
+combined$ac                            -6.038657   7.746355  -0.780   0.4361   
+combined$am                            -0.166224   1.745304  -0.095   0.9242   
+combined$ap                             0.343322   4.102558   0.084   0.9333   
+combined$astro                         -2.258847   2.462152  -0.917   0.3594   
+combined$biopub                        -0.540731   0.738000  -0.733   0.4641   
+combined$bioeng                        -0.175722   0.712540  -0.247   0.8053   
+combined$biophy                         1.925264   3.925593   0.490   0.6241   
+combined$biostat                        0.949547   1.186918   0.800   0.4241   
+combined$celtic                               NA         NA      NA       NA   
+combined$chemphysbio                   -0.544273   0.944451  -0.576   0.5647   
+combined$chembio                       -0.176331   0.710812  -0.248   0.8042   
+combined$chemchembio                    0.718032   1.900166   0.378   0.7057   
+combined$classics                       0.886194   2.480204   0.357   0.7210   
+combined$complit                       -4.717593  23.416401  -0.201   0.8404   
+combined$cs                             0.038049   1.732801   0.022   0.9825   
+combined$earth                         -2.915081   3.123670  -0.933   0.3512   
+combined$eastasian                      0.045370   1.717709   0.026   0.9789   
+combined$ec                            -0.423137   1.207442  -0.350   0.7262   
+combined$engsci                         0.077042   1.317775   0.058   0.9534   
+combined$eng                           -2.536875   4.330299  -0.586   0.5583   
+combined$epp                           -2.714202   4.561779  -0.595   0.5522   
+combined$ese                            2.238851   3.360294   0.666   0.5056   
+combined$emr                                  NA         NA      NA       NA   
+combined$fm                            -0.045123   0.710485  -0.064   0.9494   
+combined$fresh                         -0.846300   1.574171  -0.538   0.5911   
+combined$german                        -9.577170   7.907856  -1.211   0.2265   
+combined$ghhp                          -2.872213  28.867443  -0.099   0.9208   
+combined$gov                           -1.158829   1.469286  -0.789   0.4307   
+combined$hp                            -0.152617   0.708480  -0.215   0.8295   
+combined$hist                          -3.685668   4.314433  -0.854   0.3934   
+combined$histlit                        4.851411  65.223887   0.074   0.9407   
+combined$haa                            2.329540   2.843702   0.819   0.4131   
+combined$heb                           -3.947787   5.102186  -0.774   0.4395   
+combined$humanities                     0.035973   0.718024   0.050   0.9601   
+combined$ling                           4.989981   2.916757   1.711   0.0878 . 
+combined$math                           0.511326   1.791248   0.285   0.7754   
+combined$medic                          0.429851   1.292183   0.333   0.7396   
+combined$medieval                      -0.065255   0.725039  -0.090   0.9283   
+combined$me                            -0.231550   0.757771  -0.306   0.7601   
+combined$mbb                                  NA         NA      NA       NA   
+combined$mcb                            0.320963   1.233457   0.260   0.7948   
+combined$music                          0.282992   1.716929   0.165   0.8692   
+combined$neareast                       5.135702   2.131001   2.410   0.0164 * 
+combined$neuro                          8.409306  23.997411   0.350   0.7262   
+combined$oeb                                  NA         NA      NA       NA   
+combined$phil                          -0.320415   3.647539  -0.088   0.9300   
+combined$phys                           1.708657   1.753052   0.975   0.3303   
+combined$pop                            0.292391   0.758379   0.386   0.7000   
+combined$psych                          2.598089   1.748265   1.486   0.1380   
+combined$religion                       6.593227   4.668772   1.412   0.1586   
+combined$rll                           -6.041221   2.888982  -2.091   0.0371 * 
+combined$russia                        -6.514474  10.694978  -0.609   0.5428   
+combined$slavic                         0.685043   1.833319   0.374   0.7088   
+combined$soc                            0.082137   2.508139   0.033   0.9739   
+combined$southasia                      0.159376   2.143956   0.074   0.9408   
+combined$stat                           0.394006   1.442489   0.273   0.7849   
+combined$scrb                          -5.142457   6.836690  -0.752   0.4523   
+combined$sysbio                         0.093243   0.717354   0.130   0.8966   
+combined$tdm                                  NA         NA      NA       NA   
+combined$ves                            0.386701   1.586736   0.244   0.8076   
+combined$wgs                           -3.615599   2.707960  -1.335   0.1825   
+combined$rating:combined$afam           1.446308   0.473772   3.053   0.0024 **
+combined$rating:combined$anthro         0.328897   0.535685   0.614   0.5395   
+combined$rating:combined$ac             0.494895   2.090372   0.237   0.8130   
+combined$rating:combined$am             0.356105   0.403726   0.882   0.3782   
+combined$rating:combined$ap            -0.043806   0.983462  -0.045   0.9645   
+combined$rating:combined$astro          0.768151   0.589624   1.303   0.1933   
+combined$rating:combined$biopub               NA         NA      NA       NA   
+combined$rating:combined$bioeng               NA         NA      NA       NA   
+combined$rating:combined$biophy        -0.287941   1.022333  -0.282   0.7783   
+combined$rating:combined$biostat        0.059813   0.317464   0.188   0.8506   
+combined$rating:combined$celtic               NA         NA      NA       NA   
+combined$rating:combined$chemphysbio          NA         NA      NA       NA   
+combined$rating:combined$chembio              NA         NA      NA       NA   
+combined$rating:combined$chemchembio   -0.067692   0.440911  -0.154   0.8781   
+combined$rating:combined$classics      -0.247721   0.533651  -0.464   0.6427   
+combined$rating:combined$complit        0.961024   4.980936   0.193   0.8471   
+combined$rating:combined$cs             0.011636   0.452325   0.026   0.9795   
+combined$rating:combined$earth          0.554896   0.665083   0.834   0.4045   
+combined$rating:combined$eastasian     -0.098477   0.351442  -0.280   0.7794   
+combined$rating:combined$ec             0.176360   0.301066   0.586   0.5583   
+combined$rating:combined$engsci        -0.019528   0.306417  -0.064   0.9492   
+combined$rating:combined$eng            0.526563   0.927231   0.568   0.5704   
+combined$rating:combined$epp            0.514753   1.011109   0.509   0.6109   
+combined$rating:combined$ese                  NA         NA      NA       NA   
+combined$rating:combined$emr                  NA         NA      NA       NA   
+combined$rating:combined$fm                   NA         NA      NA       NA   
+combined$rating:combined$fresh          0.065121   0.344867   0.189   0.8503   
+combined$rating:combined$german         1.919787   1.539875   1.247   0.2132   
+combined$rating:combined$ghhp           0.675748   4.947227   0.137   0.8914   
+combined$rating:combined$gov            0.344418   0.340470   1.012   0.3123   
+combined$rating:combined$hp                   NA         NA      NA       NA   
+combined$rating:combined$hist           0.843740   0.966793   0.873   0.3833   
+combined$rating:combined$histlit       -1.058556  14.850450  -0.071   0.9432   
+combined$rating:combined$haa           -0.500886   0.844922  -0.593   0.5536   
+combined$rating:combined$heb            0.848576   0.943985   0.899   0.3692   
+combined$rating:combined$humanities           NA         NA      NA       NA   
+combined$rating:combined$ling          -1.074289   0.672323  -1.598   0.1108   
+combined$rating:combined$math          -0.073340   0.422966  -0.173   0.8624   
+combined$rating:combined$medic         -0.033029   0.298584  -0.111   0.9120   
+combined$rating:combined$medieval             NA         NA      NA       NA   
+combined$rating:combined$me                   NA         NA      NA       NA   
+combined$rating:combined$mbb                  NA         NA      NA       NA   
+combined$rating:combined$mcb           -0.097557   0.296640  -0.329   0.7424   
+combined$rating:combined$music         -0.054101   0.379258  -0.143   0.8866   
+combined$rating:combined$neareast      -1.074355   0.480903  -2.234   0.0260 * 
+combined$rating:combined$neuro         -1.687709   4.913792  -0.343   0.7314   
+combined$rating:combined$oeb                  NA         NA      NA       NA   
+combined$rating:combined$phil           0.032723   0.852709   0.038   0.9694   
+combined$rating:combined$phys          -0.358294   0.366871  -0.977   0.3293   
+combined$rating:combined$pop                  NA         NA      NA       NA   
+combined$rating:combined$psych         -0.589686   0.398199  -1.481   0.1393   
+combined$rating:combined$religion      -1.462021   1.033103  -1.415   0.1577   
+combined$rating:combined$rll            1.071387   0.608433   1.761   0.0789 . 
+combined$rating:combined$russia         1.474969   2.485625   0.593   0.5532   
+combined$rating:combined$slavic        -0.161187   0.399974  -0.403   0.6871   
+combined$rating:combined$soc            0.181955   0.416194   0.437   0.6622   
+combined$rating:combined$southasia     -0.083305   0.473891  -0.176   0.8605   
+combined$rating:combined$stat          -0.044776   0.356201  -0.126   0.9000   
+combined$rating:combined$scrb           1.488756   1.731837   0.860   0.3905   
+combined$rating:combined$sysbio               NA         NA      NA       NA   
+combined$rating:combined$tdm                  NA         NA      NA       NA   
+combined$rating:combined$ves           -0.118707   0.404868  -0.293   0.7695   
+combined$rating:combined$wgs            0.601774   0.668615   0.900   0.3686   
+combined$workload:combined$afam        -0.124253   0.205133  -0.606   0.5450   
+combined$workload:combined$anthro      -0.168833   0.101116  -1.670   0.0957 . 
+combined$workload:combined$ac           0.345259   1.009644   0.342   0.7325   
+combined$workload:combined$am          -0.099161   0.081765  -1.213   0.2259   
+combined$workload:combined$ap          -0.014941   0.129354  -0.116   0.9081   
+combined$workload:combined$astro       -0.104491   0.082162  -1.272   0.2041   
+combined$workload:combined$biopub             NA         NA      NA       NA   
+combined$workload:combined$bioeng             NA         NA      NA       NA   
+combined$workload:combined$biophy             NA         NA      NA       NA   
+combined$workload:combined$biostat     -0.083907   0.071400  -1.175   0.2406   
+combined$workload:combined$celtic             NA         NA      NA       NA   
+combined$workload:combined$chemphysbio        NA         NA      NA       NA   
+combined$workload:combined$chembio            NA         NA      NA       NA   
+combined$workload:combined$chemchembio -0.030518   0.074145  -0.412   0.6808   
+combined$workload:combined$classics    -0.001087   0.076335  -0.014   0.9886   
+combined$workload:combined$complit            NA         NA      NA       NA   
+combined$workload:combined$cs          -0.003599   0.052752  -0.068   0.9456   
+combined$workload:combined$earth        0.012306   0.045624   0.270   0.7875   
+combined$workload:combined$eastasian    0.061190   0.106441   0.575   0.5657   
+combined$workload:combined$ec          -0.024185   0.049095  -0.493   0.6225   
+combined$workload:combined$engsci       0.012370   0.067404   0.184   0.8545   
+combined$workload:combined$eng         -0.029813   0.085985  -0.347   0.7290   
+combined$workload:combined$epp                NA         NA      NA       NA   
+combined$workload:combined$ese         -0.469124   0.636568  -0.737   0.4615   
+combined$workload:combined$emr                NA         NA      NA       NA   
+combined$workload:combined$fm                 NA         NA      NA       NA   
+combined$workload:combined$fresh        0.183239   0.189635   0.966   0.3344   
+combined$workload:combined$german       0.043667   0.384148   0.114   0.9095   
+combined$workload:combined$ghhp        -0.008942   2.012280  -0.004   0.9965   
+combined$workload:combined$gov         -0.013369   0.055901  -0.239   0.8111   
+combined$workload:combined$hp                 NA         NA      NA       NA   
+combined$workload:combined$hist         0.057095   0.079904   0.715   0.4753   
+combined$workload:combined$histlit     -0.098343   0.899473  -0.109   0.9130   
+combined$workload:combined$haa         -0.019981   0.159111  -0.126   0.9001   
+combined$workload:combined$heb         -0.002402   0.249592  -0.010   0.9923   
+combined$workload:combined$humanities         NA         NA      NA       NA   
+combined$workload:combined$ling        -0.026723   0.083936  -0.318   0.7504   
+combined$workload:combined$math         0.013729   0.068519   0.200   0.8413   
+combined$workload:combined$medic       -0.022437   0.054178  -0.414   0.6790   
+combined$workload:combined$medieval           NA         NA      NA       NA   
+combined$workload:combined$me                 NA         NA      NA       NA   
+combined$workload:combined$mbb                NA         NA      NA       NA   
+combined$workload:combined$mcb          0.019005   0.053174   0.357   0.7210   
+combined$workload:combined$music        0.003012   0.065565   0.046   0.9634   
+combined$workload:combined$neareast    -0.026311   0.143495  -0.183   0.8546   
+combined$workload:combined$neuro       -0.038226   0.076237  -0.501   0.6163   
+combined$workload:combined$oeb                NA         NA      NA       NA   
+combined$workload:combined$phil         0.189596   0.412103   0.460   0.6457   
+combined$workload:combined$phys        -0.008710   0.067287  -0.129   0.8971   
+combined$workload:combined$pop                NA         NA      NA       NA   
+combined$workload:combined$psych        0.053935   0.101823   0.530   0.5966   
+combined$workload:combined$religion     0.016422   0.040040   0.410   0.6819   
+combined$workload:combined$rll          0.306257   0.145673   2.102   0.0361 * 
+combined$workload:combined$russia             NA         NA      NA       NA   
+combined$workload:combined$slavic       0.001691   0.070817   0.024   0.9810   
+combined$workload:combined$soc         -0.196482   0.288957  -0.680   0.4969   
+combined$workload:combined$southasia    0.002415   0.078582   0.031   0.9755   
+combined$workload:combined$stat         0.011421   0.053368   0.214   0.8306   
+combined$workload:combined$scrb        -0.264218   0.280905  -0.941   0.3474   
+combined$workload:combined$sysbio             NA         NA      NA       NA   
+combined$workload:combined$tdm                NA         NA      NA       NA   
+combined$workload:combined$ves          0.017919   0.084339   0.212   0.8318   
+combined$workload:combined$wgs          0.213429   0.133136   1.603   0.1096   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.699 on 443 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.252,	Adjusted R-squared:  0.0004563 
+F-statistic: 1.002 on 149 and 443 DF,  p-value: 0.4858
+
+
+Call:
+lm(formula = combined$rating ~ combined$workload)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-3.00739 -0.30813  0.09121  0.49017  0.69409 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       4.3051683  0.0415549 103.602   <2e-16 ***
+combined$workload 0.0007399  0.0053812   0.137    0.891    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5972 on 591 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  3.198e-05,	Adjusted R-squared:  -0.00166 
+F-statistic: 0.0189 on 1 and 591 DF,  p-value: 0.8907
+
+
+Call:
+lm(formula = combined$rating ~ combined$workload + combined$elective + 
+    combined$expos + combined$gened + combined$lang + combined$premed + 
+    combined$elective * combined$workload + combined$expos * 
+    combined$workload + combined$gened * combined$workload + 
+    combined$lang * combined$workload + combined$premed * combined$workload)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.87960 -0.28161  0.09787  0.42330  0.88513 
+
+Coefficients: (1 not defined because of singularities)
+                                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                          4.167525   0.068138  61.163  < 2e-16 ***
+combined$workload                    0.004023   0.008913   0.451 0.651859    
+combined$elective                    0.286999   0.086537   3.316 0.000968 ***
+combined$expos                       0.334797   0.576846   0.580 0.561874    
+combined$gened                      -1.259681   1.002497  -1.257 0.209423    
+combined$lang                        0.424375   0.219281   1.935 0.053437 .  
+combined$premed                      0.063963   0.850638   0.075 0.940086    
+combined$workload:combined$elective -0.001285   0.011077  -0.116 0.907667    
+combined$workload:combined$expos           NA         NA      NA       NA    
+combined$workload:combined$gened     0.280406   0.298287   0.940 0.347581    
+combined$workload:combined$lang     -0.017708   0.041789  -0.424 0.671914    
+combined$workload:combined$premed   -0.070997   0.109208  -0.650 0.515877    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5755 on 582 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.08536,	Adjusted R-squared:  0.06965 
+F-statistic: 5.432 on 10 and 582 DF,  p-value: 1.011e-07
+
+
+Call:
+lm(formula = combined$rating ~ combined$workload + combined$afam + 
+    combined$anthro + combined$ac + combined$am + combined$ap + 
+    combined$astro + combined$biopub + combined$bioeng + combined$biophy + 
+    combined$biostat + combined$celtic + combined$chemphysbio + 
+    combined$chembio + combined$chemchembio + combined$classics + 
+    combined$complit + combined$cs + combined$earth + combined$eastasian + 
+    combined$ec + combined$engsci + combined$eng + combined$epp + 
+    combined$ese + combined$emr + combined$fm + combined$fresh + 
+    combined$german + combined$ghhp + combined$gov + combined$hp + 
+    combined$hist + combined$histlit + combined$haa + combined$heb + 
+    combined$humanities + combined$ling + combined$math + combined$medic + 
+    combined$medieval + combined$me + combined$mbb + combined$mcb + 
+    combined$music + combined$neareast + combined$neuro + combined$oeb + 
+    combined$phil + combined$phys + combined$pop + combined$psych + 
+    combined$religion + combined$rll + combined$russia + combined$slavic + 
+    combined$soc + combined$southasia + combined$southasia + 
+    combined$stat + combined$scrb + combined$sysbio + combined$tdm + 
+    combined$ves + combined$wgs + combined$workload * combined$afam + 
+    combined$workload * combined$anthro + combined$workload * 
+    combined$ac + combined$workload * combined$am + combined$workload * 
+    combined$ap + combined$workload * combined$astro + combined$workload * 
+    combined$biopub + combined$workload * combined$bioeng + combined$workload * 
+    combined$biophy + combined$workload * combined$biostat + 
+    combined$workload * combined$celtic + combined$workload * 
+    combined$chemphysbio + combined$workload * combined$chembio + 
+    combined$workload * combined$chemchembio + combined$workload * 
+    combined$classics + combined$workload * combined$complit + 
+    combined$workload * combined$cs + combined$workload * combined$earth + 
+    combined$workload * combined$eastasian + combined$workload * 
+    combined$ec + combined$workload * combined$engsci + combined$workload * 
+    combined$eng + combined$workload * combined$epp + combined$workload * 
+    combined$ese + combined$workload * combined$emr + combined$workload * 
+    combined$fm + combined$workload * combined$fresh + combined$workload * 
+    combined$german + combined$workload * combined$ghhp + combined$workload * 
+    combined$gov + combined$workload * combined$hp + combined$workload * 
+    combined$hist + combined$workload * combined$histlit + combined$workload * 
+    combined$haa + combined$workload * combined$heb + combined$workload * 
+    combined$humanities + combined$workload * combined$ling + 
+    combined$workload * combined$math + combined$workload * combined$medic + 
+    combined$workload * combined$medieval + combined$workload * 
+    combined$me + combined$workload * combined$mbb + combined$workload * 
+    combined$mcb + combined$workload * combined$music + combined$workload * 
+    combined$neareast + combined$workload * combined$neuro + 
+    combined$workload * combined$oeb + combined$workload * combined$phil + 
+    combined$workload * combined$phys + combined$workload * combined$pop + 
+    combined$workload * combined$psych + combined$workload * 
+    combined$religion + combined$workload * combined$rll + combined$workload * 
+    combined$russia + combined$workload * combined$slavic + combined$workload * 
+    combined$soc + combined$workload * combined$southasia + combined$workload * 
+    combined$southasia + combined$workload * combined$stat + 
+    combined$workload * combined$scrb + combined$workload * combined$sysbio + 
+    combined$workload * combined$tdm + combined$workload * combined$ves + 
+    combined$workload * combined$wgs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.68813 -0.22983  0.05308  0.32355  1.70947 
+
+Coefficients: (21 not defined because of singularities)
+                                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                             4.083505   0.156549  26.085  < 2e-16 ***
+combined$workload                       0.014523   0.029502   0.492 0.622754    
+combined$afam                           0.595591   0.477896   1.246 0.213264    
+combined$anthro                         0.261004   0.613007   0.426 0.670459    
+combined$ac                            -3.565858   6.062306  -0.588 0.556670    
+combined$am                            -0.150971   0.546956  -0.276 0.782650    
+combined$ap                            -0.038476   0.791937  -0.049 0.961270    
+combined$astro                         -0.061138   0.512807  -0.119 0.905149    
+combined$biopub                         0.891807   0.568022   1.570 0.117061    
+combined$bioeng                        -0.083711   0.566408  -0.148 0.882568    
+combined$biophy                        -1.485632   1.035332  -1.435 0.151949    
+combined$biostat                       -1.436421   0.424618  -3.383 0.000775 ***
+combined$celtic                               NA         NA      NA       NA    
+combined$chemphysbio                    0.307162   0.749265   0.410 0.682022    
+combined$chembio                        0.227907   0.563947   0.404 0.686296    
+combined$chemchembio                   -0.001450   0.484170  -0.003 0.997612    
+combined$classics                       0.536528   0.416534   1.288 0.198332    
+combined$complit                        0.391495   0.980310   0.399 0.689804    
+combined$cs                            -0.478128   0.341418  -1.400 0.162026    
+combined$earth                          0.642940   0.275922   2.330 0.020207 *  
+combined$eastasian                      0.669768   0.512539   1.307 0.191911    
+combined$ec                            -0.437169   0.259952  -1.682 0.093263 .  
+combined$engsci                        -0.095201   0.364268  -0.261 0.793934    
+combined$eng                            0.582409   0.400694   1.454 0.146730    
+combined$epp                            4.666495   3.367455   1.386 0.166455    
+combined$ese                            0.016495   2.671940   0.006 0.995077    
+combined$emr                                  NA         NA      NA       NA    
+combined$fm                             0.349691   0.561981   0.622 0.534071    
+combined$fresh                          0.344604   0.415156   0.830 0.406913    
+combined$german                         1.025539   0.813603   1.260 0.208097    
+combined$ghhp                           1.731880   2.004493   0.864 0.388015    
+combined$gov                            0.162200   0.283991   0.571 0.568165    
+combined$hp                             0.135168   0.562906   0.240 0.810334    
+combined$hist                           0.344803   0.510321   0.676 0.499579    
+combined$histlit                        0.305690   1.888113   0.162 0.871450    
+combined$haa                           -0.924645   0.652797  -1.416 0.157289    
+combined$heb                            1.315403   0.614187   2.142 0.032714 *  
+combined$humanities                    -0.292425   0.568890  -0.514 0.607467    
+combined$ling                           0.207945   0.403924   0.515 0.606918    
+combined$math                          -0.017113   0.393051  -0.044 0.965291    
+combined$medic                          0.239121   0.239477   0.999 0.318528    
+combined$medieval                       0.611932   0.567581   1.078 0.281506    
+combined$me                             0.764007   0.589172   1.297 0.195333    
+combined$mbb                                  NA         NA      NA       NA    
+combined$mcb                           -0.195032   0.279758  -0.697 0.486047    
+combined$music                          0.462846   0.305172   1.517 0.129999    
+combined$neareast                       0.057382   0.613866   0.093 0.925563    
+combined$neuro                          0.800676   0.349256   2.293 0.022302 *  
+combined$oeb                                  NA         NA      NA       NA    
+combined$phil                          -0.264609   1.284625  -0.206 0.836892    
+combined$phys                           0.723360   0.390288   1.853 0.064431 .  
+combined$pop                           -0.925827   0.583303  -1.587 0.113114    
+combined$psych                          0.203384   0.369520   0.550 0.582297    
+combined$religion                       0.426157   0.397378   1.072 0.284063    
+combined$rll                            0.573710   0.580745   0.988 0.323700    
+combined$russia                         1.091495   1.770796   0.616 0.537928    
+combined$slavic                         0.488056   0.355600   1.372 0.170546    
+combined$soc                            0.575553   1.318133   0.437 0.662565    
+combined$southasia                      0.449799   0.306644   1.467 0.143065    
+combined$stat                          -0.320704   0.333297  -0.962 0.336419    
+combined$scrb                          -0.186011   0.840043  -0.221 0.824850    
+combined$sysbio                         0.387450   0.566801   0.684 0.494571    
+combined$tdm                                  NA         NA      NA       NA    
+combined$ves                           -0.527791   0.414108  -1.275 0.203087    
+combined$wgs                           -0.258881   0.667821  -0.388 0.698445    
+combined$workload:combined$afam        -0.064965   0.162198  -0.401 0.688944    
+combined$workload:combined$anthro      -0.035388   0.079948  -0.443 0.658229    
+combined$workload:combined$ac           0.338419   0.551145   0.614 0.539484    
+combined$workload:combined$am          -0.001021   0.064865  -0.016 0.987450    
+combined$workload:combined$ap           0.033318   0.096107   0.347 0.728986    
+combined$workload:combined$astro        0.009678   0.064418   0.150 0.880638    
+combined$workload:combined$biopub             NA         NA      NA       NA    
+combined$workload:combined$bioeng             NA         NA      NA       NA    
+combined$workload:combined$biophy       0.198243   0.169830   1.167 0.243659    
+combined$workload:combined$biostat      0.080879   0.053721   1.506 0.132839    
+combined$workload:combined$celtic             NA         NA      NA       NA    
+combined$workload:combined$chemphysbio        NA         NA      NA       NA    
+combined$workload:combined$chembio            NA         NA      NA       NA    
+combined$workload:combined$chemchembio -0.044290   0.058184  -0.761 0.446903    
+combined$workload:combined$classics    -0.013773   0.060650  -0.227 0.820451    
+combined$workload:combined$complit      0.047977   0.247410   0.194 0.846321    
+combined$workload:combined$cs           0.025574   0.039870   0.641 0.521547    
+combined$workload:combined$earth       -0.013167   0.036192  -0.364 0.716154    
+combined$workload:combined$eastasian   -0.027880   0.084549  -0.330 0.741732    
+combined$workload:combined$ec           0.049176   0.037369   1.316 0.188804    
+combined$workload:combined$engsci      -0.009511   0.053535  -0.178 0.859072    
+combined$workload:combined$eng          0.004271   0.066981   0.064 0.949179    
+combined$workload:combined$epp         -1.264523   0.983024  -1.286 0.198930    
+combined$workload:combined$ese         -0.014523   0.506162  -0.029 0.977122    
+combined$workload:combined$emr                NA         NA      NA       NA    
+combined$workload:combined$fm                 NA         NA      NA       NA    
+combined$workload:combined$fresh       -0.091254   0.149831  -0.609 0.542779    
+combined$workload:combined$german      -0.131205   0.270661  -0.485 0.628067    
+combined$workload:combined$ghhp        -0.399138   0.524486  -0.761 0.447021    
+combined$workload:combined$gov         -0.028122   0.044289  -0.635 0.525747    
+combined$workload:combined$hp                 NA         NA      NA       NA    
+combined$workload:combined$hist        -0.038377   0.060912  -0.630 0.528970    
+combined$workload:combined$histlit     -0.063973   0.413065  -0.155 0.876984    
+combined$workload:combined$haa          0.111443   0.096292   1.157 0.247700    
+combined$workload:combined$heb         -0.222037   0.127654  -1.739 0.082604 .  
+combined$workload:combined$humanities         NA         NA      NA       NA    
+combined$workload:combined$ling        -0.003896   0.066479  -0.059 0.953285    
+combined$workload:combined$math         0.010428   0.053937   0.193 0.846770    
+combined$workload:combined$medic       -0.050406   0.042575  -1.184 0.237019    
+combined$workload:combined$medieval           NA         NA      NA       NA    
+combined$workload:combined$me                 NA         NA      NA       NA    
+combined$workload:combined$mbb                NA         NA      NA       NA    
+combined$workload:combined$mcb          0.018695   0.041841   0.447 0.655211    
+combined$workload:combined$music       -0.031167   0.051909  -0.600 0.548515    
+combined$workload:combined$neareast     0.057279   0.111355   0.514 0.607219    
+combined$workload:combined$neuro       -0.024867   0.045150  -0.551 0.582054    
+combined$workload:combined$oeb                NA         NA      NA       NA    
+combined$workload:combined$phil         0.122420   0.315058   0.389 0.697770    
+combined$workload:combined$phys        -0.099088   0.049432  -2.005 0.045566 *  
+combined$workload:combined$pop                NA         NA      NA       NA    
+combined$workload:combined$psych        0.029137   0.080065   0.364 0.716079    
+combined$workload:combined$religion    -0.007388   0.031224  -0.237 0.813048    
+combined$workload:combined$rll         -0.012138   0.115802  -0.105 0.916564    
+combined$workload:combined$russia      -0.264523   0.492175  -0.537 0.591199    
+combined$workload:combined$slavic      -0.013334   0.056258  -0.237 0.812741    
+combined$workload:combined$soc         -0.057873   0.229415  -0.252 0.800943    
+combined$workload:combined$southasia    0.036338   0.060016   0.605 0.545143    
+combined$workload:combined$stat         0.006376   0.042094   0.151 0.879668    
+combined$workload:combined$scrb         0.086904   0.175092   0.496 0.619882    
+combined$workload:combined$sysbio             NA         NA      NA       NA    
+combined$workload:combined$tdm                NA         NA      NA       NA    
+combined$workload:combined$ves          0.102361   0.058725   1.743 0.081956 .  
+combined$workload:combined$wgs          0.057530   0.099376   0.579 0.562911    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5558 on 486 degrees of freedom
+  (30 observations deleted due to missingness)
+Multiple R-squared:  0.2876,	Adjusted R-squared:  0.1322 
+F-statistic: 1.851 on 106 and 486 DF,  p-value: 6.783e-06
+
